@@ -18,7 +18,7 @@
   "scripts": {
     "build:css": "postcss src/styles.css -o static/dist/tailwind-compiled.css",
     "watch": "watch 'npm run build:css' ./layouts",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d static"
   },
   "author": "",
   "license": "ISC"
