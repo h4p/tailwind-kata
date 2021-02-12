@@ -23,56 +23,77 @@
 
 <body class="antialiased bg-gray-200 custom-img">
 
-    <!-- Sticky NavBar -->
-    <header class="lg:px-16 px-6 bg-transparent flex flex-wrap items-center lg:py-0 py-2">
-        <div class="flex-1 flex justify-between items-center">
-            <a href="#">
-                <svg width="32" height="36" viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M15.922 35.798c-.946 0-1.852-.228-2.549-.638l-10.825-6.379c-1.428-.843-2.549-2.82-2.549-4.501v-12.762c0-1.681 1.12-3.663 2.549-4.501l10.825-6.379c.696-.41 1.602-.638 2.549-.638.946 0 1.852.228 2.549.638l10.825 6.379c1.428.843 2.549 2.82 2.549 4.501v12.762c0 1.681-1.12 3.663-2.549 4.501l-10.825 6.379c-.696.41-1.602.638-2.549.638zm0-33.474c-.545 0-1.058.118-1.406.323l-10.825 6.383c-.737.433-1.406 1.617-1.406 2.488v12.762c0 .866.67 2.05 1.406 2.488l10.825 6.379c.348.205.862.323 1.406.323.545 0 1.058-.118 1.406-.323l10.825-6.383c.737-.433 1.406-1.617 1.406-2.488v-12.757c0-.866-.67-2.05-1.406-2.488l-10.825-6.379c-.348-.21-.862-.328-1.406-.328zM26.024 13.104l-7.205 13.258-3.053-5.777-3.071 5.777-7.187-13.258h4.343l2.803 5.189 3.107-5.832 3.089 5.832 2.821-5.189h4.352z">
-                    </path>
-                </svg>
-            </a>
-        </div>
+    <div class="flex flex-col h-screen">
+        <!-- Sticky NavBar -->
+        <header class="lg:px-16 px-6 bg-transparent flex flex-wrap items-center lg:py-0 py-2">
+            <div class="flex-1 flex justify-between items-center">
+                <a href="#">
+                    <svg width="32" height="36" viewBox="0 0 32 36" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.922 35.798c-.946 0-1.852-.228-2.549-.638l-10.825-6.379c-1.428-.843-2.549-2.82-2.549-4.501v-12.762c0-1.681 1.12-3.663 2.549-4.501l10.825-6.379c.696-.41 1.602-.638 2.549-.638.946 0 1.852.228 2.549.638l10.825 6.379c1.428.843 2.549 2.82 2.549 4.501v12.762c0 1.681-1.12 3.663-2.549 4.501l-10.825 6.379c-.696.41-1.602.638-2.549.638zm0-33.474c-.545 0-1.058.118-1.406.323l-10.825 6.383c-.737.433-1.406 1.617-1.406 2.488v12.762c0 .866.67 2.05 1.406 2.488l10.825 6.379c.348.205.862.323 1.406.323.545 0 1.058-.118 1.406-.323l10.825-6.383c.737-.433 1.406-1.617 1.406-2.488v-12.757c0-.866-.67-2.05-1.406-2.488l-10.825-6.379c-.348-.21-.862-.328-1.406-.328zM26.024 13.104l-7.205 13.258-3.053-5.777-3.071 5.777-7.187-13.258h4.343l2.803 5.189 3.107-5.832 3.089 5.832 2.821-5.189h4.352z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
 
-        <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900"
-                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                <title>menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg></label>
-        <input class="hidden" type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900"
+                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <title>menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg></label>
+            <input class="hidden" type="checkbox" id="menu-toggle" />
 
-        <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
-            <nav>
-                <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
-                    <li><a class="link-item" href="#">Recordings</a></li>
-                    <li><a class="link-item" href="#">Gear</a></li>
-                    <li><a class="link-item" href="#">Idols</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor">
-                <img class="rounded-full w-10 h-12 border-2 border-transparent hover:border-indigo-400"
-                    src="img/profil.jpeg"
-                    alt="Tobias Wessels">
-            </a>
-        </div>
-    </header>
-    <div class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover">
+            <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+                <nav>
+                    <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+                        <li><a class="link-item" href="#">Recordings</a></li>
+                        <li><a class="link-item" href="#">Gear</a></li>
+                        <li><a class="link-item" href="#">Idols</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor">
+                    <img class="rounded-full w-10 h-12 border-2 border-transparent hover:border-indigo-400"
+                        src="img/profil.jpeg" alt="Tobias Wessels">
+                </a>
+            </div>
+        </header>
+        <!-- <div class="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover">
         <div class="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
             Welcome to my site!
         </div>
-    </div>
+    </div> -->
+        <main class="flex-1 overflow-y-auto p-5">
+            <div class="max-w-3xl bg-white rounded-lg mx-auto my-16 p-16">
+                <h1 class="text-2xl font-medium mb-2">Let's Build: With Tailwind CSS</h1>
+                <h2 class="font-medium text-sm text-indigo-400 mb-4 uppercase tracking-wide">Responsive Navbar</h2>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum illo cupiditate molestias atque
+                consequuntur
+                ea quo cumque, odit velit sint similique? Asperiores ratione aperiam tempora, alias corrupti deleniti
+                quaerat molestiae.
 
-
-
-    <div class="px-4">
-        <div class="max-w-3xl bg-white rounded-lg mx-auto my-16 p-16">
-            <h1 class="text-2xl font-medium mb-2">Let's Build: With Tailwind CSS</h1>
-            <h2 class="font-medium text-sm text-indigo-400 mb-4 uppercase tracking-wide">Responsive Navbar</h2>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum illo cupiditate molestias atque consequuntur
-            ea quo cumque, odit velit sint similique? Asperiores ratione aperiam tempora, alias corrupti deleniti
-            quaerat molestiae.
-        </div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequatur rem, eos nesciunt expedita perspiciatis deleniti dolore ullam! Iure fugit, et neque molestias odio voluptatum sapiente repudiandae explicabo. Consectetur, sit?
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, quam. Quia maxime, numquam veniam fugit eum quod cupiditate similique provident, et atque nulla pariatur, optio reiciendis a dolorem repellat eos!
+                Sit delectus ea, est rerum pariatur nobis? Sunt distinctio quis repudiandae cum fugiat sit libero unde, sequi laborum. Dolorem quibusdam ipsa blanditiis facere. Dignissimos iure corrupti sit dolore, asperiores possimus.
+                Debitis error officiis, vel minima consequatur a optio nobis earum illo, animi sapiente reiciendis aliquam perspiciatis sed dolorum voluptas facilis tenetur ea in voluptatum, fugiat esse cupiditate quidem. Vero, dolore?
+                Nobis assumenda accusamus, quisquam odio laborum atque. Laborum praesentium soluta officia dolore expedita quas illum, doloribus libero unde aliquid, in culpa, fugiat delectus? Error nesciunt nemo enim optio molestiae aspernatur.
+                Hic ea repellendus doloribus, iusto mollitia officiis eaque quae esse reprehenderit consequatur. Fuga, excepturi molestiae praesentium nulla minima, non tempore eos error nisi atque eveniet ipsa commodi itaque repellendus eaque!
+                Quisquam dicta, quibusdam non porro eaque repellendus modi nemo. Aut fugit vero quas quia libero soluta aliquid doloribus dolores ipsam ullam iste, consequatur ab ex dolorum distinctio voluptas. Eligendi, corporis.
+                Aliquid nam illum assumenda ad explicabo rem dolore dicta cum excepturi minus dolor, laboriosam at ducimus alias ullam sint odit unde minima pariatur. Est enim rem velit adipisci natus quasi.
+                Aspernatur quo magni unde veniam corrupti debitis, sed, expedita quas omnis fuga perferendis provident harum tenetur sequi assumenda atque architecto quibusdam id earum accusamus sunt! Sint dicta nulla quos cum.
+                Numquam labore sunt fuga, explicabo consequuntur nulla eligendi minima perspiciatis dolorem! Quasi qui ipsum, voluptates tenetur at ratione odit, itaque, quaerat sit esse fugit consequatur nam non quibusdam unde aliquam?
+                Voluptatibus voluptate, laborum aperiam voluptates reprehenderit quidem modi error eligendi ea, ipsa tenetur assumenda officia facilis neque omnis. Mollitia perspiciatis laboriosam eveniet est quisquam quibusdam optio recusandae error aperiam ad?
+                Temporibus quasi consectetur adipisci dolore optio nam quisquam, officia consequuntur doloribus nemo tempora ad magni quas ratione quod delectus ullam atque numquam voluptas quidem harum totam in. Facilis, officia veniam?
+                Commodi quo, voluptates iusto delectus debitis, corporis nobis at, nam cum repellat porro dolore. Error nobis quae fuga odit dolorem nostrum quisquam a quidem quia quasi, accusamus, asperiores dicta possimus!
+                Modi rem recusandae incidunt, hic optio necessitatibus sint quidem architecto tempora minima quaerat, aut in ipsa, obcaecati nemo eveniet voluptatem corporis ut provident. Est libero officiis corrupti delectus, similique ullam.
+                Corrupti assumenda culpa totam perspiciatis cupiditate expedita molestiae voluptate provident a, necessitatibus voluptatem veniam labore velit minima iste odit quibusdam est nesciunt dolorum nemo quae eum sequi deserunt cumque! Doloremque?
+                Alias quisquam molestias error, possimus veritatis ut beatae sed architecto odio id, inventore fuga dolores harum repellat aperiam quidem impedit. Nihil sequi, eligendi doloremque dignissimos nobis cumque tempore cum quo.
+                Provident culpa ab at cupiditate eius minus obcaecati laborum officia illum! Dolores perspiciatis distinctio reprehenderit non, modi in nemo magnam mollitia, quisquam deserunt iure deleniti velit omnis consequatur ipsa eveniet?
+                Quibusdam consequuntur eos, non illo quia modi blanditiis praesentium nostrum explicabo nisi doloribus, odit voluptatum nobis ut deleniti. Doloribus expedita aspernatur accusantium totam in architecto beatae. Consequuntur doloremque voluptate nisi!
+                Eius, ullam consequatur quae voluptatum fugit recusandae, molestias incidunt quam alias sit provident tempora. Voluptas voluptatum molestias consequuntur saepe nostrum modi amet perferendis numquam, vitae at nihil debitis maiores. Natus.
+                Nulla, ex, alias inventore temporibus voluptatem repudiandae praesentium magnam totam fugit atque, vel illum. Facere eaque alias eum, voluptatibus corporis ab cum nemo accusantium necessitatibus incidunt quam nisi id! Recusandae.
+                Beatae ea minus sed sint nostrum iure obcaecati laudantium a reprehenderit similique modi consequatur, numquam vitae dignissimos accusantium, praesentium dolor dolorem ullam repudiandae assumenda! Facere qui odio porro magni praesentium.
+            </div>
+        </main>
     </div>
 </body>
 
