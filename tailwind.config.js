@@ -172,13 +172,13 @@ module.exports = {
       ...theme('colors'),
       default: theme('colors.gray.300', 'currentColor'),
     }),
-    borderRadius: {
-      none: '0',
-      sm: '0.125rem',
-      default: '0.25rem',
-      lg: '0.5rem',
-      full: '9999px',
-    },
+    // borderRadius: {
+    //   none: '0',
+    //   sm: '0.125rem',
+    //   default: '0.25rem',
+    //   lg: '0.5rem',
+    //   full: '9999px',
+    // },
     borderWidth: {
       default: '1px',
       '0': '0',
