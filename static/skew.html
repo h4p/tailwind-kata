@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" class="text-gray-900 leading-tight">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="/build/tailwind.css">
+    <style>
+        body {
+            background: #42545f;
+        }
+
+        a.selected {
+            background: #02b7fa;
+            text-shadow: none;
+            color: whitesmoke;
+        }
+
+        li {
+            min-width: 140px;
+            text-align: center;
+        }
+
+        li a:hover {
+            background-color: rgba(99, 179, 237, 1);
+            color: whitesmoke;
+        }
+
+        li a {
+            transform: skew(-30deg);
+            height: 40px;
+            line-height: 40px;
+            border-right: 7px solid #42545f;
+            display: block;
+            color: #424242;
+            font-weight: bold;
+        }
+
+        li a div {
+            transform: skew(30deg);
+        }
+
+        li:first-child a {
+            margin-left: -10px;
+        }
+
+        ul {
+            background: linear-gradient(90deg, #c6d8e2 60%, #42545f 90%);
+            overflow: hidden !important;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .navbar-collapse {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header" class="container mx-auto bg-blue-400" id="menu">
+        <nav class="flex">
+            <div class="navbar-collapse">
+                <ul>
+                    <li><a class="selected"><div>Services</div></a></li>
+                    <li><a><div>Porfolio</div></a></li>
+                    <li><a><div>About</div></a></li>
+                    <li><a><div>Contact</div></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</body>
+
+
+</html>
